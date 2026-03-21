@@ -86,8 +86,12 @@ hr {
 .writing-canvas {
     width: 150px;
     height: 150px;
-    background: url("_hanzi_grid_background.svg");
+    background-image: url("_hanzi_grid_background.svg");
     background-size: cover;
+}
+
+body.nightMode .writing-canvas {
+    background-image: url("_hanzi_grid_background_dark.svg");
 }
 
 div.hidden {
