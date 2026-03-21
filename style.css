@@ -1,5 +1,14 @@
-/* Reset the default layout */
+/* I'm so sorry but I don't wanna break the whole previously added notes */
+@font-face {
+    font-family: Noto Serif CJK SC;
+    src: url("_kaiti.ttf");
+}
 
+:root {
+    font-size: 18px;
+}
+
+* Reset the default layout */
 /* AnkiDroid */
 #content {
     margin: 0;
@@ -14,12 +23,26 @@
     padding: 0;
 }
 
+p {
+    width: 100%;
+    height: fit-content;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+hr {
+    margin: 0;
+}
+
+div.hidden {
+    display: none;
+}
+
 input#typeans {
     background-color: transparent;
     border: none;
     outline: none;
     font-size: 1em;
-    text-align: center;
     padding: 0.5em;
 }
 
@@ -32,6 +55,11 @@ input#typeans {
     padding: 0.5em;
     box-sizing: border-box;
     gap: 0.5em;
+    width: 100%;
+}
+
+.card-layout * {
+   text-align: center;
 }
 
 #word-container {
@@ -43,47 +71,16 @@ input#typeans {
     flex-wrap: wrap;
 }
 
-.writing-canvas {
-    border: 1px solid #DDD;
-}
-
-:root {
-    font-size: 18px;
-}
-
-@font-face {
-    font-family: Noto Serif CJK SC;
-    src: url("_kaiti.ttf");
-}
-
-p {
-    width: 100%;
-    height: fit-content;
-    margin-top: 0;
-    margin-bottom: 15px;
-}
-
-hr {
-    margin: 0;
-}
-
-.card {
-    text-align: center;
-}
-
-.card>* {
-    width: 100%;
-}
-
-.chinese-font>p, .chinese-font #typeans {
+.chinese-font > p, .chinese-font#typeans {
     font-family: 'Noto Serif CJK SC', sans-serif !important;
 }
 
-.large-font-size > p, .large-font-size #typeans {
+.large-font-size > p, .large-font-size#typeans {
     font-size: 8em !important;
 }
 
 .writing-canvas {
+    border: 1px solid #DDD;
     width: 150px;
     height: 150px;
     background-image: url("_hanzi_grid_background.svg");
@@ -91,9 +88,6 @@ hr {
 }
 
 body.nightMode .writing-canvas {
+    border-color: #333;
     background-image: url("_hanzi_grid_background_dark.svg");
-}
-
-div.hidden {
-	display: none;
 }
