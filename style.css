@@ -34,8 +34,23 @@ hr {
     margin: 0;
 }
 
-div.hidden {
+.hidden {
     display: none;
+}
+
+.card-layout > details {
+    width: 100%;
+    text-align: left;
+}
+
+.card-layout > details > summary {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 1em 0;
+}
+
+.card-layout > details * {
+    text-align: left;
 }
 
 input#typeans {
