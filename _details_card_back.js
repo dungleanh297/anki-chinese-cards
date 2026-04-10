@@ -19,4 +19,6 @@
     if (hanVietSpan.innerText.length == 2) {
         hanVietSpan.classList.add("hidden");
     }
+
+    document.querySelectorAll("details").forEach(e => e.open = true);
 })();

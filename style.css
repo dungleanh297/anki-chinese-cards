@@ -38,20 +38,6 @@ hr {
     display: none;
 }
 
-.card-layout > details {
-    width: 100%;
-    text-align: left;
-}
-
-.card-layout > details > summary {
-    font-weight: bold;
-    cursor: pointer;
-    padding: 1em 0;
-}
-
-.card-layout > details * {
-    text-align: left;
-}
 
 input#typeans {
     background-color: transparent;
@@ -105,4 +91,23 @@ input#typeans {
 body.nightMode .writing-canvas {
     border-color: #333;
     background-image: url("_hanzi_grid_background_dark.svg");
+}
+
+.card-layout > details {
+    width: 100%;
+    text-align: left;
+}
+
+.card-layout > details > summary {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 1em 0;
+}
+
+.card-layout > details * {
+    text-align: left;
+}
+
+li {
+	text-align: left;
 }
